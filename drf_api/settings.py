@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     'followers',
     'gearlists',
     'gearitems',
+    'events',
 ]
 
 MIDDLEWARE = [
