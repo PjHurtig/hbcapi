@@ -123,6 +123,7 @@ if 'CLIENT_ORIGIN_DEV' in os.environ:
 
     CORS_ALLOWED_ORIGIN_REGEXES = [
         rf"{extracted_url}.(eu|us)\d+\.codeanyapp\.com$",
+        "https://hbc-frontend-pj-5db59e2e946b.herokuapp.com",
     ]
 
 CORS_ALLOW_CREDENTIALS = True
