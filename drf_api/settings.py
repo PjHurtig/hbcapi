@@ -65,7 +65,9 @@ DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOSTS'),
+    'https://hbc-frontend-pj-5db59e2e946b.herokuapp.com',
     '8000-pjhurtig-hbcapi-m627tupatu.us2.codeanyapp.com',
+    'https://hbc-api-pj-9ce30abdc101.herokuapp.com',
     'localhost',
 ]
 
@@ -124,6 +126,8 @@ if 'CLIENT_ORIGIN_DEV' in os.environ:
     CORS_ALLOWED_ORIGIN_REGEXES = [
         rf"{extracted_url}.(eu|us)\d+\.codeanyapp\.com$",
         "https://hbc-frontend-pj-5db59e2e946b.herokuapp.com",
+        "https://3000-pjhurtig-hbc-frontend-kjo47wrky4.us2.codeanyapp.com",
+        
     ]
 
 CORS_ALLOW_CREDENTIALS = True
