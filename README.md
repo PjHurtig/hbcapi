@@ -1,23 +1,22 @@
-
 # HikeBikeClimb API
 
 HikeBikeClimb is a site based on the Javascript React framework. The app uses an API created with the Django-Rest Framework to load, create, edit, and delete data. It is a site for users that likes to hike, ride bikes, and/or climb. The site gives the user tools to create and view events in these categories of sport, and to collect their specific gear in gear lists that they can update as they update their gear, to keep track of and inspire other users that are interested in different gear set ups. A user can also add posts to update the other users on the site about their journey and milestones in these sports.
 
 ## Live Site
 
-Backend API is live here: [project-api-pj-379fd6382ab3.herokuapp.com](https://project-api-pj-379fd6382ab3.herokuapp.com/)
+Backend API is live here: [hbc-api-pj-9ce30abdc101.herokuapp.com](https://hbc-api-pj-9ce30abdc101.herokuapp.com/)
 
 #### Front End Site
 
-Frontend Is live [Here](https://project-frontend-pj-2fd2a1043672.herokuapp.com/)
+Frontend Is live [Here](https://hbc-frontend-pj-5db59e2e946b.herokuapp.com/)
 
 ## Repository
 
-Backend repo: [github.com/PjHurtig/project-api](https://github.com/PjHurtig/project-api)
+Backend repo: [github.com/PjHurtig/hbcapi](https://github.com/PjHurtig/hbcapi)
 
 #### Front End Repository
 
-Front end repo: [github.com/PjHurtig/project-frontend](https://github.com/PjHurtig/project-frontend)
+Front end repo: [github.com/PjHurtig/hbc-frontend](https://github.com/PjHurtig/hbc-frontend)
 
 ## Table of Contents
 
@@ -29,19 +28,6 @@ Front end repo: [github.com/PjHurtig/project-frontend](https://github.com/PjHurt
   - [Table of Contents](#table-of-contents)
   - [Testing](#testing)
     - [Manual Testing](#manual-testing)
-  - [](#)
-  - [](#-1)
-  - [](#-2)
-  - [](#-3)
-  - [](#-4)
-  - [](#-5)
-  - [](#-6)
-  - [](#-7)
-  - [](#-8)
-  - [](#-9)
-  - [](#-10)
-  - [](#-11)
-  - [](#-12)
     - [Validation Testing](#validation-testing)
   - [Deployment](#deployment)
     - [Deploying the Site to Heroku](#deploying-the-site-to-heroku)
@@ -57,54 +43,67 @@ Front end repo: [github.com/PjHurtig/project-frontend](https://github.com/PjHurt
 
 Welcome message in root route
 ![Welcome message in root route](https://i.imgur.com/FNdiqmu.png)
+
 ---
 
 Adding /profiles to the base url shows full profile list
 ![Adding /profiles](https://i.imgur.com/qRLCwp1.png)
+
 ---
 
 Adding /profile/ and and id shows a singel profile
 ![Adding /profiles](https://i.imgur.com/AuH24Js.png)
+
 ---
 
 Adding /gearlists to the base url shows full gearlists list
 ![Adding /gearlists to the base url shows full gearlists list](https://i.imgur.com/eTvWd3C.png)
+
 ---
 
 Adding /gearlists and id shows that specific gearlist
 ![Adding /gearlists and id shows that specific gearlist](https://i.imgur.com/669btx6.png)
+
 ---
 
-Adding gearlists/?owner__profile= and an id gives all gearlists by a single user
+Adding gearlists/?owner\_\_profile= and an id gives all gearlists by a single user
 ![Adding /gearlists and id shows that specific gearlist](https://i.imgur.com/jR1QRH1.png)
+
 ---
 
 Adding /posts to the base url shows full posts list
 ![](https://i.imgur.com/yWJ95lf.png)
+
 ---
 
 Adding /posts and id shows that specific post
 ![](https://i.imgur.com/exEsgad.png)
+
 ---
 
-Adding posts/?owner__profile= and an id gives all posts by a single user
+Adding posts/?owner\_\_profile= and an id gives all posts by a single user
 ![](https://i.imgur.com/Rsc5QUp.png)
+
 ---
 
 Adding /events to the base url shows full events list
 ![](https://i.imgur.com/DCxyskJ.png)
+
 ---
 
 Adding /events and id shows that specific event
 ![](https://i.imgur.com/yNihzPU.png)
+
 ---
 
-Adding events/?owner__profile= and an id gives all events by a single user
+Adding events/?owner\_\_profile= and an id gives all events by a single user
 ![](https://i.imgur.com/Q8sUGv1.png)
+
 ---
 
 Addning /gearitems shows all gearitems created with info about related gearlists
 ![](https://i.imgur.com/8LbgRU2.png)
+
 ---
 
 ### Validation Testing
@@ -116,32 +115,32 @@ All .py files passed through the [Code Institute Python Linter](https://pep8ci.h
 ### Deploying the Site to Heroku
 
 1. First create a database instance on <https://www.elephantsql.com/>
-    - Navigate to ElephantSQL.com and click “Get a managed database today”
-    - Select “Try now for FREE” in the TINY TURTLE database plan
-    - Select “Log in with GitHub” and authorize ElephantSQL with your selected GitHub account
-    - In the Create New team form:
-        - Add a team name (your own name is fine)
-        - Read and agree to the Terms of Service
-        - Select Yes for GDPR
-        - Provide your email address
-        - Click “Create Team”`
-    - Once logged in, click 'Create New Instance'
-    - Select a plan and name (this is usually the name of the project)
-    - Click select region and select the region closest to you
-    - Click review and create instance
-    - Once created, go to the dashboard, click on the database name, and copy the URL
+   - Navigate to ElephantSQL.com and click “Get a managed database today”
+   - Select “Try now for FREE” in the TINY TURTLE database plan
+   - Select “Log in with GitHub” and authorize ElephantSQL with your selected GitHub account
+   - In the Create New team form:
+     - Add a team name (your own name is fine)
+     - Read and agree to the Terms of Service
+     - Select Yes for GDPR
+     - Provide your email address
+     - Click “Create Team”`
+   - Once logged in, click 'Create New Instance'
+   - Select a plan and name (this is usually the name of the project)
+   - Click select region and select the region closest to you
+   - Click review and create instance
+   - Once created, go to the dashboard, click on the database name, and copy the URL
 2. Create an account on [https://cloudinary.com/](https://cloudinary.com/) and copy the CLOUNDARY_URL from the dashboard
 3. On Heroku.com, click Create New App, and create using any name
 4. Go to the settings tab, click reveal config vars, and add the following key, and value pairs:
-    - CLIENT_ORIGIN: this is the URL of the deployed front-end site
-    - CLOUINARY_URL: the URL copied from Cloudinary
-    - DATABASE_URL: the database copied from Elephant SQL
-    - DISABLE_COLLECTSTATIC: set to 1
-    - SECRET_KEY: any value will do
+   - CLIENT_ORIGIN: this is the URL of the deployed front-end site
+   - CLOUINARY_URL: the URL copied from Cloudinary
+   - DATABASE_URL: the database copied from Elephant SQL
+   - DISABLE_COLLECTSTATIC: set to 1
+   - SECRET_KEY: any value will do
 5. Open a new workspace from this repository and install any necessary packages from the requirements.txt file
 6. Create an env.py file and add the lines (if committing to GitHub ensure env.py is in the .gitignore file)
-    - import os
-    - os.environ['DATABASE_URL'] = 'your_database_url'
+   - import os
+   - os.environ['DATABASE_URL'] = 'your_database_url'
 7. Enter the command 'python manage.py migrate'. This will migrate the database structure into your newly created database.
 8. Go back to Heroku and click deploy. Copy the URL of the deployed site
 9. Go back to the Heroku app and add a final config var of: ALLOWED_HOST with the value being the URL you just copied
