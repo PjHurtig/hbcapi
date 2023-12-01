@@ -42,67 +42,68 @@ Front end repo: [github.com/PjHurtig/hbc-frontend](https://github.com/PjHurtig/h
 ### Manual Testing
 
 Welcome message in root route
-![Welcome message in root route](https://i.imgur.com/FNdiqmu.png)
+
+![Welcome message in root route](https://i.imgur.com/jupmCJD.png)
 
 ---
 
 Adding /profiles to the base url shows full profile list
-![Adding /profiles](https://i.imgur.com/qRLCwp1.png)
+![Adding /profiles](https://i.imgur.com/czHmlpM.png)
 
 ---
 
 Adding /profile/ and and id shows a singel profile
-![Adding /profiles](https://i.imgur.com/AuH24Js.png)
+![Adding /profiles](https://i.imgur.com/YUxW6om.png)
 
 ---
 
 Adding /gearlists to the base url shows full gearlists list
-![Adding /gearlists to the base url shows full gearlists list](https://i.imgur.com/eTvWd3C.png)
+![Adding /gearlists to the base url shows full gearlists list](https://i.imgur.com/GEazk5L.png)
 
 ---
 
 Adding /gearlists and id shows that specific gearlist
-![Adding /gearlists and id shows that specific gearlist](https://i.imgur.com/669btx6.png)
+![Adding /gearlists and id shows that specific gearlist](https://i.imgur.com/5ZUC599.png)
 
 ---
 
 Adding gearlists/?owner\_\_profile= and an id gives all gearlists by a single user
-![Adding /gearlists and id shows that specific gearlist](https://i.imgur.com/jR1QRH1.png)
+![Adding /gearlists and id shows that specific gearlist](https://i.imgur.com/ddk9X6B.png)
 
 ---
 
 Adding /posts to the base url shows full posts list
-![](https://i.imgur.com/yWJ95lf.png)
+![](https://i.imgur.com/c2NmNFD.png)
 
 ---
 
 Adding /posts and id shows that specific post
-![](https://i.imgur.com/exEsgad.png)
+![](https://i.imgur.com/6Z4XlHi.png)
 
 ---
 
 Adding posts/?owner\_\_profile= and an id gives all posts by a single user
-![](https://i.imgur.com/Rsc5QUp.png)
+![](https://i.imgur.com/6eRNz21.png)
 
 ---
 
 Adding /events to the base url shows full events list
-![](https://i.imgur.com/DCxyskJ.png)
+![](https://i.imgur.com/4jfUNZs.png)
 
 ---
 
 Adding /events and id shows that specific event
-![](https://i.imgur.com/yNihzPU.png)
+![](https://i.imgur.com/hivOivA.png)
 
 ---
 
 Adding events/?owner\_\_profile= and an id gives all events by a single user
-![](https://i.imgur.com/Q8sUGv1.png)
+![](https://i.imgur.com/DIJDA1H.png)
 
 ---
 
 Addning /gearitems shows all gearitems created with info about related gearlists
-![](https://i.imgur.com/8LbgRU2.png)
+![](https://i.imgur.com/bol4VVb.png)
 
 ---
 
